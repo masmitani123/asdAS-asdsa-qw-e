@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Header */
+  header {
+    height: 100vh;
+  } 
+  /* Navbar */
+  .header-logo {
+    width: 45px;
+    margin-top: -6px;
+  }
+  .header-logoXSM {
+    width: 40px;
+    margin-top: -6px;
+  }
+  .motto {
+    font-size: small;
+    font-style: italic;
+    padding-left: 17%;
+  }
+  .nav-menu {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, .7));
+    transition: all .7s;  
+  }
+  .menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #f4f9f9;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: color .5s;
+  }
+  .logo{
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  .menu-item:hover {
+    color: #f5593d;
+  }
+  .nav-active {
+    color: #70aed2;
+    margin-left:1400%;
+  }
+  .line1, .line2, .line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+  }
+  .change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);  
+  }
+  .change .line2 {
+    opacity: 0;  
+  }
+  .change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);  
+  }
+  .custom-navbar {
+    padding: 5px 0px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+  }
+  /* End of Navbar */
+
+  /* Banner */
+.banner {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+  }
+  .dot {
+    width: 1px;
+    height: 1px;
+  }
+  .banner-heading {
+    animation-name: anim;
+    animation-duration: 2s;
+    font-size: 25px;
+    margin-left: -10%;
+    color: #151f20;
+    margin-top: 10%;
+  }
+  .banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: -43%;
+    animation-fill-mode: backwards;
+  }
+  .banner-list {
+    padding-top: 1%;
+    font-size: 100%;
+    font-weight: bold;
+    margin-left: -5%;
+  }
+  .banner-list1 {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .85s;
+    animation-fill-mode: backwards;
+  }
+  .banner-list2 {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+  }
+  .banner-list3 {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 1.15s;
+    animation-fill-mode: backwards;
+  }
+  .banner-list4 {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 1.3s;
+    animation-fill-mode: backwards;
+  }
+  @keyframes anim {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /* End of Banner */
+
+
+/* Mission */
+.mission {
+  background: #151f20;
+}
+/* End of Mission */
+
+.meetsam-mainheader {
+  font-family: 'Rock Salt', cursive;
+}
+.explanation {
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+/*Meet Samuel-1*/
+.meetsam-1 {
+  background: linear-gradient(105deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32,0.95) 40%, transparent 50%), url(Pictures/influencer-2.png) right center no-repeat; 
+  background-color: rgba(21, 31, 32, 1);
+}
+.header1 {
+  font-family: 'Norican', cursive;
+}
+@media (max-width: 992px) {
+  .meetsam-1 {
+    background: url(Pictures/influencer.jpg) top center no-repeat;
+    filter: grayscale(1);
+  }
+}
+@media (min-width: 710px) and (max-width: 992px) {
+.explanation-1 {
+  margin-left: 12%;
+}
+}
+
+/*End of meet Samuel-1*/
+
+/*Meet Samuel-2*/
+.meetsam-2 {
+  background: linear-gradient(105deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32,0.95) 40%, transparent 50%), url(Pictures/Motorcycle-4.png) right center no-repeat; 
+  background-color: rgba(21, 31, 32, 1);
+}
+@media (max-width: 992px) {
+  .meetsam-2 {
+    background: url(Pictures/Motorcycle-2.jpg) center center no-repeat;
+    filter: grayscale(1);
+  }
+}
+/*End of meet Samuel-2*/
+
+/*Meet Samuel-3*/
+.meetsam-3 {
+  background: linear-gradient(105deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32,0.95) 50%, transparent 50%), url(Pictures/entrepreneur-1.png) right center no-repeat; 
+  background-color: rgba(21, 31, 32, 1);
+}
+@media (max-width: 992px) {
+  .meetsam-3 {
+    background: url(Pictures/entrepreneur-2.jpg) center center no-repeat;
+    filter: grayscale(1);
+  }
+}
+@media (min-width: 720px) and (max-width: 992px) {
+  .explanation-3 {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  }
+
+/*End of meet Samuel-3*/
+
+.quote-container{
+  background: #fff;
+  margin: 2px auto 0;
+  padding: 1.5em;
+}
+
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 40px;
+  margin: 1.5em 0;
+  position: relative;
+}
+
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #666;
+  text-align: center;
+}
+
+/*Activities*/
+.card-shadow {
+  box-shadow: 5px 8px 20px #444;
+}
+.heading {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: #222;
+  width: 50%;
+  cursor: pointer;
+  opacity: .7;
+  transition: all .5s;
+}
+.heading:hover {
+  opacity: 1;
+}
+@media (max-width: 991px) {
+  .card-ml {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .card-sml {
+    display: none;  
+    }
+    }
+/*End of Activities*/
+
+/* Contact us*/
+.contact {
+  background: linear-gradient(105deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32, .95) 50%, transparent 50%), url(PICTURES/IMG_9331.JPG)  right center no-repeat; 
+  background-size:  contain;
+}
+
+.input {
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  transition: all .8s;
+}
+.input:focus {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: #fff;
+  border-bottom: 2px solid #f5593d;
+}
+.submit-button {
+  background: #f5593d;
+  color: #eee;
+  transition: all .3s;
+}
+.submit-button:hover {
+  background: #f9793d;
+  transform: translateY(-3px);
+}
+.label {
+  color: #777;
+  display: block;
+  margin-top: -60px;
+  margin-left: 4px;
+  font-size: 13px;
+  transition: all .3s;
+}
+.input:placeholder-shown + .label {
+  transform: translate(20px, 20px);
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 992px) {
+  .contact {
+    background: linear-gradient(rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
+  }
+  .contact-form {
+    width: 80%;
+    margin: auto;
+  }
+}
+/* End of Contact us */
+
+/* Footer */
+.footer-logo{
+  padding-top: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  height: 5rem;
+  display: block;
+  
+}
+
+.facebook-link {
+  color: #eee;
+  size: 13px;
+  transition: all .3s;
+}
+.facebook-link:hover {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.instagram-link {
+  color: #eee;
+  size: 13px;
+  transition: all .3s;
+}
+.instagram-link:hover {
+  color:  #8a3ab9;
+  text-decoration: none;
+}
+
+.youtube-link {
+  color: #eee;
+  size: 13px;
+  transition: all .3s;
+}
+.youtube-link:hover {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+.twitter-link {
+  color: #eee;
+  size: 13px;
+  transition: all .3s;
+}
+.twitter-link:hover {
+  color: #00acee;
+  text-decoration: none;
+}
+
+.linkedin-link {
+  color: #eee;
+  size: 13px;
+  transition: all .3s;
+}
+.linkedin-link:hover {
+  color: #0e76a8;
+  text-decoration: none;
+}
+/* End of Footer */
